@@ -236,8 +236,11 @@ class Game{
         this.upstate[player.index-1] = 1;
         console.log("jump");
       }
-      else if(this.upstate[player.index-1]>0 && this.upstate[player.index-1]<10)
-         this.upstate[player.index-1] +=1;
+      else if(this.upstate[player.index-1]>0 && this.upstate[player.index-1]<10){
+        this.upstate[player.index-1] +=1;
+        console.log("Banashree1 "+ this.upstate[player.index-1])
+      }
+         
       else if(this.upstate[player.index-1]==10)
         {
           this.upstate[player.index-1]=-1;
